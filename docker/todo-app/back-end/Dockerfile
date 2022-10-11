@@ -4,9 +4,10 @@ WORKDIR /app
 
 EXPOSE 3001
 
-COPY package*.json .
-COPY ./src/ ./src/
-
 ADD node_modules.tar.gz  .
 
-ENTRYPOINT [ "npm", "start" ]
+COPY package*.json ./
+COPY ./src ./src
+
+
+CMD [ "npm", "start" ]
