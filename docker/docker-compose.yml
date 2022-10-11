@@ -5,8 +5,8 @@ services:
         image: todotests:latest
         restart: always
         depends_on:
-            -   "todofront"
             -   "todoback"
+            -   "todofront"
         environment:
             FRONT_HOST: todofront
 
