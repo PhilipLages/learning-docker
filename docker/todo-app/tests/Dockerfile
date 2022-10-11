@@ -1,10 +1,8 @@
 FROM mjgargani/puppeteer:trybe1.0
 
-WORKDIR /app/tests
+WORKDIR /app
 
 COPY . .
-
-RUN npm install
 
 ADD node_modules.tar.gz .
 

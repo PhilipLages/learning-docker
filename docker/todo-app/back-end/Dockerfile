@@ -1,12 +1,10 @@
 FROM node:14
 
-WORKDIR /app/back-end/
+WORKDIR /app
 
 EXPOSE 3001
 
 COPY . .
-
-RUN npm install
 
 ADD node_modules.tar.gz  .
 
