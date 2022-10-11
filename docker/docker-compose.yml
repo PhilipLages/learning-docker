@@ -3,6 +3,7 @@ version: '3'
 services:
     todotests:
         image: todotests
+        restart: always
         depends_on:
             - todofront
             - todoback

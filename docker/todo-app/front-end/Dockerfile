@@ -4,7 +4,9 @@ WORKDIR /app
 
 EXPOSE 3000
 
-COPY . .
+COPY package*.json .
+COPY ./src/ ./src/
+COPY ./public/ ./public/
 
 ADD node_modules.tar.gz .
 

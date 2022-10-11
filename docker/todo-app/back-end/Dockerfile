@@ -4,7 +4,8 @@ WORKDIR /app
 
 EXPOSE 3001
 
-COPY . .
+COPY package*.json .
+COPY ./src/ ./src/
 
 ADD node_modules.tar.gz  .
 
